@@ -17,8 +17,7 @@ Ext.define('CustomApp', { extend: 'Rally.app.App', componentCls: 'app',
             }
         var cardBoardConfig = {
             xtype: 'rallycardboard',
-            types: ['PortfolioItem/Feature', 'PortfolioItem/Initiative', 'PortfolioItem/Theme'],
-            //attribute: 'InvestmentCategory', 
+            types: ['PortfolioItem/Feature', 'PortfolioItem/Initiative', 'PortfolioItem/Theme'], 
             attribute: 'c_CustomDropDown', //columns are based on a custom field c_CustomDropDown
             cardConfig: myCardConfig
         };
