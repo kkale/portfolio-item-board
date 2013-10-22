@@ -28,9 +28,8 @@ Ext.define('CustomApp', { extend: 'Rally.app.App', componentCls: 'app',
             }
         var cardBoardConfig = {
             xtype: 'rallycardboard',
-            types: ['PortfolioItem/Feature', 'PortfolioItem/Initiative', 'PortfolioItem/Theme'],
-            //attribute: 'InvestmentCategory', 
-            attribute: 'c_CustomDropDown', //columns are based on a custom field c_CustomDropDown
+            types: ['PortfolioItem/Feature', 'PortfolioItem/Initiative', 'PortfolioItem/Theme'], 
+            attribute: 'c_CustomDropDown', //columns are based on a custom field 'Custom DropDown'. In Web Services API it is referred to as c_c_CustomDropDown
             cardConfig: myCardConfig
         };
         
