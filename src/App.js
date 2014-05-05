@@ -12,13 +12,13 @@ Ext.define('CustomApp', { extend: 'Rally.app.App', componentCls: 'app',
         this.addNew = this.add(addNewConfig);
         var myCardConfig = {
                xtype: 'rallycard',
-               fields: ['State','Parent','c_CustomDropDown'], 
+               fields: ['State','Parent','PreliminaryEstimate'], 
                maxHeight: 100
             }
         var cardBoardConfig = {
             xtype: 'rallycardboard',
             types: ['PortfolioItem/Feature', 'PortfolioItem/Initiative', 'PortfolioItem/Theme'], 
-            attribute: 'c_CustomDropDown', //columns are based on a custom field c_CustomDropDown
+            attribute: 'PreliminaryEstimate', //columns are based on a custom field c_CustomDropDown
             cardConfig: myCardConfig
         };
         
